@@ -1,0 +1,35 @@
+body{
+    background: #000;
+    font-family: Roboto, sans-serif;
+}
+.wrapper{
+    width: 500px;
+    display: flex;
+    margin: 20px auto;
+    color: #000;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.fa.fa-ellipsis-v{
+    margin-left: auto;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.fa.fa-html5{
+    font-size: 2em;
+}
+.title-text{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-weight: 700;
+}

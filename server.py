@@ -2,6 +2,7 @@ try:
     # try to import flask, or return error if has not been installed
     from flask import Flask
     from flask import send_from_directory
+    from flask_cors import CORS
 except ImportError:
     print("You don't have Flask installed, run `$ pip3 install flask` and try again")
     exit(1)
@@ -13,6 +14,7 @@ app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0 #disable cache
 
 # Serving the index file
+CORS(app)
 @app.route('/', methods=['GET'])
 def serve_dir_directory_index():
     if os.path.exists("app.py"):
